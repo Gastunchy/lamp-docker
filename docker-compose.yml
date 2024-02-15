@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  server_db:
+    image: mariadb:latest
+    container_name: server_db
+    environment:
+      MARIADB_ROOT_PASSWORD: ${PASSROOT}
+    volumes:
+      - ./public_html/database:/var/lib/mysql
+      - ./public_html/database/init.sql:/docker-entrypoint-initdb.d/1.sql
+      - ./public_html/database/devopstravel.sql:/docker-entrypoint-initdb.d/2.sql
+    networks:
+      - lamp-gaston
+      - control
+
+  web-php: 
+    build: .
+    container_name: myweb
+    ports:
+      - "80:80"
+    depends_on:
+      - server_db
+    networks:
+      - lamp-gaston
+  
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: phpmyadmin
+    ports:
+      - "8081:80"
+    depends_on:
+      - server_db
+    environment:
+      PMA_HOST: server_db
+    networks:
+      - control
+  
+volumes:
+  public_html:
+    driver: local
+
+networks:
+  lamp-gaston:
+    driver: bridge
+  control:
+    driver: bridge
