@@ -17,7 +17,7 @@ En este repo, se encuentran los archivos necesarios para desplegar un LAMP Stack
 7. Ejecuta docker-compose up -d
 
 ## Detalle de docker-compose
-. ###MariaDB
+. ### MariaDB
   1. 
 
 lamp-docker 
