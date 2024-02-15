@@ -7,9 +7,9 @@ services:
     environment:
       MARIADB_ROOT_PASSWORD: ${PASSROOT}
     volumes:
-      - ./public_html/database:/var/lib/mysql
-      - ./public_html/database/init.sql:/docker-entrypoint-initdb.d/1.sql
-      - ./public_html/database/devopstravel.sql:/docker-entrypoint-initdb.d/2.sql
+      - ./public-html/database:/var/lib/mysql
+      - ./public-html/database/init.sql:/docker-entrypoint-initdb.d/1.sql
+      - ./public-html/database/devopstravel.sql:/docker-entrypoint-initdb.d/2.sql
     networks:
       - lamp-gaston
       - control
@@ -37,7 +37,7 @@ services:
       - control
   
 volumes:
-  public_html:
+  public-html:
     driver: local
 
 networks:

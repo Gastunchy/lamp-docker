@@ -71,9 +71,9 @@ EOF
 
 # Reparando conector PHP
 
-sed -i "s/\(\$dbPassword *= *\).*/\1\"${PASSDB}\";/" /public-html/config.php
-sed -i "s/localhost/server_db/g" /public-html/config.php
-sed -i "s/codeuser/${USERDB}/g" /public-html/config.php
+sed -i "s/\(\$dbPassword *= *\).*/\1\"${PASSDB}\";/" ./public-html/config.php
+sed -i "s/localhost/server_db/g" ./public-html/config.php
+sed -i "s/codeuser/${USERDB}/g" ./public-html/config.php
 
 # Creando imagenes y contenedores
 
