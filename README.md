@@ -10,11 +10,15 @@ En este repo, se encuentran los archivos necesarios para desplegar un LAMP Stack
 
 ## Detalle de Deploy.sh:
 1. Valida e instala: docker.io, docker-compose, git y curl
-3. Clona el repo: [https://github.com/roxsross/bootcamp-devops-2023 -b $BRANCH](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza)
+3. Clona el repo: [https://github.com/roxsross/bootcamp-devops-2023 // Branch: ejercicio2-dockeriza](https://github.com/roxsross/bootcamp-devops-2023/tree/ejercicio2-dockeriza)
 4. Copia el contenido de 295devops-travel-lamp en public-html
 5. Crea archivo init.sql
 6. Cambia contenido de config.php
 7. Ejecuta docker-compose up -d
+
+## Detalle de docker-compose
+. ###MariaDB
+  1. 
 
 lamp-docker 
 chmod +x Deploy.sh 
