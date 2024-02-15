@@ -17,8 +17,15 @@ En este repo, se encuentran los archivos necesarios para desplegar un LAMP Stack
 7. Ejecuta docker-compose up -d
 
 ## Detalle de docker-compose
-. ### MariaDB
-  1. 
+- ### MariaDB
+  1. Descarga de imagen de MariaDB
+  2. Copia archivos de inicio: init.sql y base de datos: devopstravel.sql
+  3. Crea contenedor en redes lamp-gaston y control
+- ### MYWEB
+  1. Ejecuta el archivo Dockerfile para crear la imagen de php-apache
+  2. En la creacion de la imagen se copian todos los archivos de la web
+  3. Crea contenedor en red lamp-gaston y espone el puerto 80
+- ### PHPMYADMIN
 
 lamp-docker 
 chmod +x Deploy.sh 
