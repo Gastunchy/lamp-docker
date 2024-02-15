@@ -34,7 +34,7 @@ En este repo, se encuentran los archivos necesarios para desplegar un LAMP Stack
 - Pueden testear en https://killercoda.com/playgrounds/scenario/ubuntu
 
 ## Ejecusion sugerida
-1. Clonar este repo ()
+1. Clonar este repo (https://github.com/Gastunchy/lamp-docker)
 2. Ingresar al directorio "lamp-docker"
 3. Ejecutar "sudo chmod +x Deploy.sh" para hacer ejecutable el script
-4. ejecutar "./Deploy.sh"ocker.io
+4. ejecutar "./Deploy.sh"ocker.io"
