@@ -1,6 +1,6 @@
 FROM php:8.1-apache
 
-COPY public_html /var/www/html
+COPY public-html /var/www/html
 
 RUN docker-php-ext-install mysqli
 RUN docker-php-ext-enable mysqli
