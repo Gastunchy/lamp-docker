@@ -35,7 +35,18 @@ El armado de este stack LAMP (Linux, Apache, MySQL, PHP) es parte del reto de la
 - Pueden testear en https://killercoda.com/playgrounds/scenario/ubuntu
 
 ## Ejecusion sugerida
-1. Clonar este repo (https://github.com/Gastunchy/lamp-docker)
-2. Ingresar al directorio "lamp-docker"
-3. Ejecutar ```sudo chmod +x Deploy.sh``` para hacer ejecutable el script
-4. ejecutar ```./Deploy.sh```
+### Instrucciones de Instalación
+
+1. **Clona este repositorio:**
+   ```bash
+   git clone https://github.com/Gastunchy/lamp-docker.git
+2. **Accede al directorio del proyecto:**
+   ```bash
+   cd lamp-docker
+3. **Haz que el script Deploy.sh sea ejecutable:**
+   ```bash
+   sudo chmod +x Deploy.sh
+4. **Ejecuta el script para desplegar:**
+   ```
+   ./Deploy.sh
+   ````
